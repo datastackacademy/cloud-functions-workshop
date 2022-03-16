@@ -20,6 +20,11 @@ howdoi.VERIFY_SSL_CERTIFICATE = False
 howdoi.SCHEME = 'http://'
 
 
+def simple_function(request: Request):
+    name = request.args.get("name", "Anonymous")
+    return f"hello {name}", 200
+
+
 def howdoi_function(request: Request):
     """
     Our Google Cloud Function to answer programming question

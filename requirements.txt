@@ -1,0 +1,3 @@
+Flask==2.0.1
+howdoi==2.0.19
+functions-framework==3.0.0

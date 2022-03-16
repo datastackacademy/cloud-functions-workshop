@@ -132,8 +132,9 @@ your `main.py` to include the skeleton of you Cloud Function:
 from flask import Request
 
 
-def howdoi_function(request: Request):
-    return "hello world!", 200
+def simple_function(request: Request):
+    name = request.args.get("name", "Anonymous")
+    return f"hello {name}", 200
 ```
 
 You can name your function anything you want, here we've called it `howdoi_function`. The function takes a normal flask 
@@ -160,37 +161,20 @@ howdoi.VERIFY_SSL_CERTIFICATE = False
 howdoi.SCHEME = 'http://'
 
 
-def howdoi_function(request: Request):
-    """
-    Our Google Cloud Function to answer programming question
+def simple_function(request: Request):
+    name = request.args.get("name", "Anonymous")
+    return f"hello {name}", 200
 
-    send a REST request with your programming question as the GET URL param
-    """
-    # first try to get the question from the URL params
+
+def howdoi_function(request: Request):
     question = request.args.get('question', None)
-    # if question is not in URL params then try other options
     if question is None:
-        content_type = request.headers['content-type']
-        if content_type == 'application/json':
-            # part of json request body
-            request_json = request.get_json(silent=True)
-            if request_json and 'question' in request_json:
-                question = request_json['question']
-            else:
-                raise ValueError("JSON is invalid, or missing a 'question' tag")
-        elif content_type == 'text/plain':
-            # as plain text in request data
-            name = request.data
-        elif content_type == 'application/x-www-form-urlencoded':
-            # as a form parameter
-            name = request.form.get('question')
-        else:
-            # couldn't find the question anywhere! return http error response
-            return "Unknown content type: {}".format(content_type), 400, { 'content-type': 'text/plain'}
+        answer = "You forgot to provide a question!"
+    else:
+        # use the howdoi lib for an answer
+        answer = howdoi.howdoi(question)
     
-    # send back the answer to the question
-    answer = howdoi.howdoi(question)
-    # response rest header options
+    # send back response
     response_headers = {
         'content-type': 'text/plain',
         'server-time': str(datetime.now()),
@@ -201,7 +185,6 @@ def howdoi_function(request: Request):
 
 In the function above, you can see that:
 
-- We try to get the question from our request object in multiple ways. We first see if the question is provided as URL parameters. If not, we continue to search for a json payload, form parameters, or just plain text.
 - We submit our question to howdoi module and return the response as plain text.
 - Cloud function return is a standard flask tuple response as (data, http response code, headers)
 - The two lines on top are a workaround for a possible howdoi error. Sometimes this error appears if howdoi is not able to authenticate SSL certificates when searching for answers online.
@@ -249,7 +232,7 @@ To stop your local function just CTRL+C out of the terminal.
 Deploying your function to Google Cloud is just as easy as running it locally. You can do so via a single `gcloud` command line. Run the following in your `cloud_functions/howdoi` directory:
 
 ```bash
-gcloud functions deploy dsa-<%your name%>-howdoi-function \
+gcloud functions deploy dsa-howdoi-function \
    --entry-point howdoi_function \
    --runtime python37 \
    --trigger-http \

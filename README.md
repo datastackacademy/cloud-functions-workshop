@@ -279,11 +279,6 @@ Using curl:
 curl -X POST -d '{"question": "iterate through list comprehension in python"}' -H "Content-type: application/json" https://us-central1-deb-01.cloudfunctions.net/dsa-howdoi-function
 ```
 
-Or Postman:
-
-![postman example](imgs/postman_02.png)
-
-
 ## Adding Local Packages
 
 Local packages in Cloud Functions work just as regular python packages; create a python package subdirectory including `__init__.py` 
@@ -325,9 +320,6 @@ gcloud functions logs read dsa-howdoi-function
 
 **NOTE:** `gcloud functions deploy` deploys all your local files onto the cloud. This includes any subdirectories and files under your cloud function directory. To ignore files you can add a `.gcloudignore` file in the same syntax as `.gitignore` to exclude things that you don't want to be uploaded.
 
-```
-
-
 
 # Storage Triggered Function
 
@@ -346,7 +338,7 @@ Cloud Functions are the most effective way to write **event-based micro-services
 They work the best for handling smaller data volumes like single files (csv, audio, video, ...) typically within a GB or less; while other tools like Spark (Cloud Dataproc) are better for processing data at bulk.
 
 
-# Load Airports 
+## Load Airports 
 
 In this section, we will create a GCS triggered Cloud function that loads an airports data file from Cloud Storage onto BigQuery.
 
@@ -618,6 +610,6 @@ gcloud functions logs read dsadeb_airports_loader_storage_trigger
 You can delete your functions by running:
 
 ```bash
-gcloud functions delete dsadeb_howdoi --quiet
+gcloud functions delete dsa-howdoi-function --quiet
 gcloud functions delete dsadeb_airports_loader_storage_trigger --quiet
 ```

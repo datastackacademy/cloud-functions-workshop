@@ -1,0 +1,206 @@
+iata,name,city,state,country,lat,long,dst,tz,utc_offset
+0O3,Calaveras Co-Maury Rasmussen ,San Andreas,CA,USA,38.14611639,-120.6481733,,America/Los_Angeles,-7.0
+0O4,Corning Municipal,Corning,CA,USA,39.94376806,-122.1713781,,America/Los_Angeles,-7.0
+0O5,University,Davis,CA,USA,38.53146222,-121.7864906,,America/Los_Angeles,-7.0
+0Q5,Shelter Cove,Shelter Cove,CA,USA,40.02764333,-124.0733639,,America/Los_Angeles,-7.0
+0Q6,Shingletown,Shingletown,CA,USA,40.52210111,-121.8177683,,America/Los_Angeles,-7.0
+1O2,Lampson ,Lakeport,CA,USA,38.99017472,-122.8997175,,America/Los_Angeles,-7.0
+1O3,Lodi,Lodi,CA,USA,38.20241667,-121.26841670000002,,America/Los_Angeles,-7.0
+1O6,Dunsmuir Municipal-Mott,Dunsmuir,CA,USA,41.26320889,-122.2719528,,America/Los_Angeles,-7.0
+2O1,Gansner ,Quincy,CA,USA,39.94378056,-120.9468983,,America/Los_Angeles,-7.0
+2O3,Angwin-Parrett ,Angwin,CA,USA,38.57851778,-122.4352572,,America/Los_Angeles,-7.0
+2O6,Chowchilla,Chowchilla,CA,USA,37.11244417,-120.2468406,,America/Los_Angeles,-7.0
+2O7,Independence,Independence,CA,USA,36.81382111,-118.2050956,,America/Los_Angeles,-7.0
+2Q3,Yolo Co-Davis/Woodland/Winters,Davis/Woodland/Winters,CA,USA,38.5790725,-121.8566322,,America/Los_Angeles,-7.0
+36S,Happy Camp,Happy Camp,CA,USA,41.79067944,-123.3889444,,America/Los_Angeles,-7.0
+3O1,Gustine,Gustine,CA,USA,37.26271722,-120.9632586,,America/Los_Angeles,-7.0
+3O7,Hollister Municipal,Hollister,CA,USA,36.89334528,-121.4102706,,America/Los_Angeles,-7.0
+49X,Chemehuevi Valley,Chemehuevi Valley,CA,USA,34.52751083,-114.4310697,,America/Los_Angeles,-7.0
+A30,Scott Valley,Fort Jones,CA,USA,41.55819444,-122.8553103,,America/Los_Angeles,-7.0
+A32,Butte Valley,Dorris,CA,USA,41.88709222,-121.9755614,,America/Los_Angeles,-7.0
+AAT,Altay Air Base,Alturas,CA,USA,41.483,-120.5653611,U,America/Los_Angeles,-7.0
+ACV,California Redwood Coast-Humboldt County Airport,Arcata/Eureka,CA,USA,40.97811528,-124.1086189,A,America/Los_Angeles,-7.0
+AJO,Corona Municipal,Corona,CA,USA,33.89765389,-117.60244,,America/Los_Angeles,-7.0
+APC,Napa County Airport,Napa,CA,USA,38.21319444,-122.28069440000002,A,America/Los_Angeles,-7.0
+APV,Apple Valley,Apple Valley,CA,USA,34.57528944,-117.1861792,,America/Los_Angeles,-7.0
+AUN,Auburn Municipal,Auburn,CA,USA,38.95476944,-121.08208059999998,,America/Los_Angeles,-7.0
+AVX,Catalina Airport,Avalon,CA,USA,33.40494444,-118.4158611,A,America/Los_Angeles,-7.0
+BFL,Meadows Field,Bakersfield,CA,USA,35.43359806,-119.0567681,A,America/Los_Angeles,-7.0
+BIH,Eastern Sierra Regional Airport,Bishop,CA,USA,37.37309556,-118.36360890000002,\N,America/Los_Angeles,-7.0
+BLH,Blythe Airport,Blythe,CA,USA,33.61916278,-114.7168764,A,America/Los_Angeles,-7.0
+BNG,Banning Municipal Airport,Banning,CA,USA,33.92307111,-116.8505756,A,America/Los_Angeles,-7.0
+BUR,Bob Hope Airport,Burbank,CA,USA,34.20061917,-118.3584969,A,America/Los_Angeles,-7.0
+BWC,Brawley Municipal,Brawley,CA,USA,32.9931,-115.5169325,,America/Los_Angeles,-7.0
+C80,New Coalinga Municipal,Coalinga,CA,USA,36.16313889,-120.2938139,,America/Los_Angeles,-7.0
+C83,Byron,Byron,CA,USA,37.8284525,-121.6258219,,America/Los_Angeles,-7.0
+CCB,Cable Airport,Upland,CA,USA,34.11154056,-117.68758970000002,A,America/Los_Angeles,-7.0
+CCR,Buchanan Field,Concord,CA,USA,37.98965639,-122.0568972,A,America/Los_Angeles,-7.0
+CEC,Jack Mc Namara Field Airport,Crescent City,CA,USA,41.78015722,-124.2365333,A,America/Los_Angeles,-7.0
+CIC,Chico Municipal Airport,Chico,CA,USA,39.79538278,-121.8584231,A,America/Los_Angeles,-7.0
+CMA,Cunnamulla Airport,Camarillo,CA,USA,34.21375472,-119.0943264,O,America/Los_Angeles,-7.0
+CNO,Chino Airport,Chino,CA,USA,33.97469444,-117.6366111,A,America/Los_Angeles,-7.0
+CPM,Compton/Woodley,Compton,CA,USA,33.89001611,-118.2436831,,America/Los_Angeles,-7.0
+CRO,Corcoran,Corcoran,CA,USA,36.10245111,-119.5948469,,America/Los_Angeles,-7.0
+CRQ,Caravelas Airport,Carlsbad,CA,USA,33.12822222,-117.2802222,S,America/Los_Angeles,-7.0
+CXL,Calexico International Airport,Calexico,CA,USA,32.66950333,-115.5133281,A,America/Los_Angeles,-7.0
+DAG,Barstow Daggett Airport,Daggett,CA,USA,34.85371333,-116.7866875,\N,America/Los_Angeles,-7.0
+DLO,Delano Municipal,Delano,CA,USA,35.74558056,-119.23650390000002,,America/Los_Angeles,-7.0
+DVO,Francisco Bangoy International Airport,Novato,CA,USA,38.14351944,-122.5572167,N,America/Los_Angeles,-7.0
+EED,Needles Airport,Needles,CA,USA,34.76619444,-114.62329309999998,\N,America/Los_Angeles,-7.0
+EKA,Murray Field,Eureka,CA,USA,40.80338889,-124.11279170000002,\N,America/Los_Angeles,-7.0
+EMT,San Gabriel Valley Airport,El Monte,CA,USA,34.08600889,-118.0348453,E,America/Los_Angeles,-7.0
+F70,French Valley,Murieta/Temecula,CA,USA,33.57605556,-117.1279722,,America/Los_Angeles,-7.0
+FAT,Fresno Yosemite International Airport,Fresno,CA,USA,36.77619444,-119.7181389,A,America/Los_Angeles,-7.0
+FCH,Fresno-Chandler Downtown,Fresno,CA,USA,36.732365,-119.8198961,,America/Los_Angeles,-7.0
+FOT,Rohnerville,Fortuna,CA,USA,40.55393583,-124.1326589,,America/Los_Angeles,-7.0
+FUL,Fullerton Municipal Airport,Fullerton,CA,USA,33.87201417,-117.9797842,A,America/Los_Angeles,-7.0
+HAF,Half Moon Bay Airport,Half Moon Bay,CA,USA,37.51382944,-122.5010892,A,America/Los_Angeles,-7.0
+HHR,Jack Northrop Field Hawthorne Municipal Airport,Hawthorne,CA,USA,33.92283972,-118.3351872,A,America/Los_Angeles,-7.0
+HJO,Hanford Municipal,Hanford,CA,USA,36.31852194,-119.6288675,,America/Los_Angeles,-7.0
+HMT,Hemet-Ryan,Hemet,CA,USA,33.73398167,-117.0225258,,America/Los_Angeles,-7.0
+HWD,Hayward Executive Airport,Hayward,CA,USA,37.65926528,-122.1224083,A,America/Los_Angeles,-7.0
+IPL,Imperial County Airport,Imperial,CA,USA,32.83422028,-115.5787456,A,America/Los_Angeles,-7.0
+IYK,Inyokern Airport,Inyokern,CA,USA,35.65884306,-117.8295122,A,America/Los_Angeles,-7.0
+IZA,Zona da Mata Regional Airport,Santa Ynez,CA,USA,34.60682028,-120.0755617,S,America/Los_Angeles,-7.0
+KIC,Mesa Del Rey,King City,CA,USA,36.22802139,-121.1218614,,America/Los_Angeles,-7.0
+L04,Holtville,Holtville,CA,USA,32.84032361,-115.26748059999998,,America/Los_Angeles,-7.0
+L05,Kern Valley,Kernville,CA,USA,35.72828472,-118.4198069,,America/Los_Angeles,-7.0
+L06,Furnace Creek,Death Valley National Park,CA,USA,36.46383694,-116.8814425,,America/Los_Angeles,-7.0
+L08,Borrego Valley,Borrego Springs,CA,USA,33.25902778,-116.3209722,,America/Los_Angeles,-7.0
+L12,Redlands Municipal,Redlands,CA,USA,34.08526167,-117.14637890000002,,America/Los_Angeles,-7.0
+L17,Taft-Kern County,Taft,CA,USA,35.14107806,-119.4412294,,America/Los_Angeles,-7.0
+L18,Fallbrook Community Airpark,Fallbrook,CA,USA,33.35419806,-117.2508686,,America/Los_Angeles,-7.0
+L19,Wasco-Kern County,Wasco,CA,USA,35.61967889,-119.3537242,,America/Los_Angeles,-7.0
+L26,Hesperia,Hesperia,CA,USA,34.37722333,-117.3158783,,America/Los_Angeles,-7.0
+L35,Big Bear City,Big Bear,CA,USA,34.26361944,-116.854475,,America/Los_Angeles,-7.0
+L45,Bakersfield Municipal,Bakersfield,CA,USA,35.32483333,-118.9958333,,America/Los_Angeles,-7.0
+L52,Oceano County,Oceano,CA,USA,35.10136472,-120.6221153,,America/Los_Angeles,-7.0
+L67,Rialto Municipal ,Rialto,CA,USA,34.12934361,-117.4016303,,America/Los_Angeles,-7.0
+L70,Agua Dulce Airpark,Agua Dulce,CA,USA,34.50415889,-118.3128561,,America/Los_Angeles,-7.0
+L71,California City Municipal,California City,CA,USA,35.15125306,-118.01666670000002,,America/Los_Angeles,-7.0
+L72,Trona,Trona,CA,USA,35.81245333,-117.3272783,,America/Los_Angeles,-7.0
+L84,Lost Hills-Kern County,Lost Hills,CA,USA,35.62357083,-119.6862383,,America/Los_Angeles,-7.0
+LAX,Los Angeles International Airport,Los Angeles,CA,USA,33.94253611,-118.4080744,A,America/Los_Angeles,-7.0
+LGB,Long Beach /Daugherty Field/ Airport,Long Beach,CA,USA,33.81772222,-118.1516111,A,America/Los_Angeles,-7.0
+LHM,Lincoln Regional ,Lincoln,CA,USA,38.90916111,-121.3513361,,America/Los_Angeles,-7.0
+LPC,Lompoc Airport,Lompoc,CA,USA,34.66561028,-120.4667883,A,America/Los_Angeles,-7.0
+LSN,Los Banos Municipal,Los Banos,CA,USA,37.06290556,-120.8692511,,America/Los_Angeles,-7.0
+LVK,Livermore Municipal Airport,Livermore,CA,USA,37.69339944,-121.8203519,A,America/Los_Angeles,-7.0
+MAE,Madera Municipal Airport,Madera,CA,USA,36.9857175,-120.1119844,A,America/Los_Angeles,-7.0
+MCE,Merced Regional Macready Field,Merced,CA,USA,37.28472861,-120.5138858,A,America/Los_Angeles,-7.0
+MER,Castle Airport,Atwater,CA,USA,37.38048056,-120.5681889,A,America/Los_Angeles,-7.0
+MHR,Sacramento Mather Airport,Sacramento,CA,USA,38.55389694,-121.2975908,A,America/Los_Angeles,-7.0
+MHV,Mojave Airport,Mojave,CA,USA,35.05936472,-118.1518561,A,America/Los_Angeles,-7.0
+MIT,Shafter-Minter ,Shafter,CA,USA,35.50592944,-119.1915236,,America/Los_Angeles,-7.0
+MMH,Mammoth Yosemite Airport,Mammoth Lakes,CA,USA,37.62404861,-118.8377722,A,America/Los_Angeles,-7.0
+MOD,Modesto City Co-Harry Sham Field,Modesto,CA,USA,37.62581722,-120.95442140000002,A,America/Los_Angeles,-7.0
+MRY,Monterey Peninsula Airport,Monterey,CA,USA,36.5869825,-121.8429478,A,America/Los_Angeles,-7.0
+MYF,Montgomery ,San Diego,CA,USA,32.81573306,-117.1395664,,America/Los_Angeles,-7.0
+MYV,Yuba County Airport,Marysville,CA,USA,39.09777278,-121.569825,A,America/Los_Angeles,-7.0
+O02,Nervino,Beckwourth,CA,USA,39.82073556,-120.3543767,,America/Los_Angeles,-7.0
+O05,Rogers ,Chester,CA,USA,40.28235278,-121.2411683,,America/Los_Angeles,-7.0
+O08,Colusa County,Colusa,CA,USA,39.17903,-121.9933611,,America/Los_Angeles,-7.0
+O09,Round Valley,Covelo,CA,USA,39.79015444,-123.26640249999998,,America/Los_Angeles,-7.0
+O15,Turlock Municipal,Turlock,CA,USA,37.48743556,-120.6968669,,America/Los_Angeles,-7.0
+O16,Garberville,Garberville,CA,USA,40.08597806,-123.8136397,,America/Los_Angeles,-7.0
+O17,Nevada County  Air Park,Grass Valley,CA,USA,39.22402778,-121.0030833,,America/Los_Angeles,-7.0
+O19,Kneeland,Eureka,CA,USA,40.7193,-123.9275531,,America/Los_Angeles,-7.0
+O21,Hoopa,Hoopa,CA,USA,41.04290778,-123.6683894,,America/Los_Angeles,-7.0
+O22,Columbia,Columbia,CA,USA,38.03042306,-120.4145556,,America/Los_Angeles,-7.0
+O24,Lee Vining,Lee Vining,CA,USA,37.95825861,-119.1065375,,America/Los_Angeles,-7.0
+O26,Lone Pine,Lone Pine,CA,USA,36.58826667,-118.0520314,,America/Los_Angeles,-7.0
+O27,Oakdale,Oakdale,CA,USA,37.75634472,-120.80020890000002,,America/Los_Angeles,-7.0
+O28,Ells Field-Willits Municipal,Willits,CA,USA,39.45129778,-123.3722844,,America/Los_Angeles,-7.0
+O31,Healdsburg Municipal,Healdsburg,CA,USA,38.65352083,-122.89943970000002,,America/Los_Angeles,-7.0
+O32,Reedley Municipal,Reedley,CA,USA,36.66633917,-119.4498483,,America/Los_Angeles,-7.0
+O37,Haigh ,Orland,CA,USA,39.72124194,-122.1466508,,America/Los_Angeles,-7.0
+O41,Watts-Woodland,Woodland,CA,USA,38.67387639,-121.8720772,,America/Los_Angeles,-7.0
+O42,Woodlake,Woodlake,CA,USA,36.39883833,-119.1073289,,America/Los_Angeles,-7.0
+O46,Weed,Weed,CA,USA,41.47487,-122.4530739,,America/Los_Angeles,-7.0
+O48,Little River,Little River,CA,USA,39.26203778,-123.7537347,,America/Los_Angeles,-7.0
+O52,Sutter County,Yuba City,CA,USA,39.12655889,-121.6091328,,America/Los_Angeles,-7.0
+O54,Lonnie Pool /Weaverville,Weaverville,CA,USA,40.7457,-122.92197,,America/Los_Angeles,-7.0
+O57,Bryant ,Bridgeport,CA,USA,38.26241917,-119.2257094,,America/Los_Angeles,-7.0
+O59,Cedarville,Cedarville,CA,USA,41.55267139,-120.1663339,,America/Los_Angeles,-7.0
+O60,Cloverdale Municipal,Cloverdale,CA,USA,38.7743525,-122.9922217,,America/Los_Angeles,-7.0
+O61,Cameron Airpark,Cameron Park,CA,USA,38.68407028,-120.9871642,,America/Los_Angeles,-7.0
+O68,Mariposa-Yosemite,Mariposa,CA,USA,37.51077,-120.0418439,,America/Los_Angeles,-7.0
+O69,Petaluma Municipal,Petaluma,CA,USA,38.2578325,-122.6055406,,America/Los_Angeles,-7.0
+O70,Westover Field Amador County,Jackson,CA,USA,38.37680111,-120.7939075,,America/Los_Angeles,-7.0
+O81,Tulelake Municipal,Tulelake,CA,USA,41.88738,-121.3594331,,America/Los_Angeles,-7.0
+O85,Benton ,Redding,CA,USA,40.57487278,-122.4080642,,America/Los_Angeles,-7.0
+O86,Trinity Center,Trinity Center,CA,USA,40.98320111,-122.6941889,,America/Los_Angeles,-7.0
+O88,Rio Vista Municipal,Rio Vista,CA,USA,38.1935,-121.7023889,,America/Los_Angeles,-7.0
+O89,Fall River Mills,Fall River Mills,CA,USA,41.01877417,-121.4333136,,America/Los_Angeles,-7.0
+OAK,Metropolitan Oakland International Airport,Oakland,CA,USA,37.72129083,-122.2207167,A,America/Los_Angeles,-7.0
+OAR,Marina Municipal Airport,Marina,CA,USA,36.68190278,-121.7624492,A,America/Los_Angeles,-7.0
+OKB,Oceanside Municipal,Oceanside,CA,USA,33.21797639,-117.3515075,,America/Los_Angeles,-7.0
+ONT,Ontario International Airport,Ontario,CA,USA,34.056,-117.6011944,A,America/Los_Angeles,-7.0
+OVE,Oroville Municipal,Oroville,CA,USA,39.48775,-121.622,,America/Los_Angeles,-7.0
+OXR,Oxnard Airport,Oxnard,CA,USA,34.20080083,-119.2072164,A,America/Los_Angeles,-7.0
+PAO,Palo Alto Airport of Santa Clara County,Palo Alto,CA,USA,37.46111944,-122.11504440000002,A,America/Los_Angeles,-7.0
+PMD,Palmdale Regional/USAF Plant 42 Airport,Palmdale,CA,USA,34.62938889,-118.0845528,A,America/Los_Angeles,-7.0
+POC,Brackett Field,La Verne,CA,USA,34.09164833,-117.7817803,A,America/Los_Angeles,-7.0
+PRB,Paso Robles Municipal Airport,Paso Robles,CA,USA,35.67288611,-120.6270558,A,America/Los_Angeles,-7.0
+PSP,Palm Springs International Airport,Palm Springs,CA,USA,33.82921556,-116.5062531,A,America/Los_Angeles,-7.0
+PTV,Porterville Municipal,Porterville,CA,USA,36.02960778,-119.0627311,,America/Los_Angeles,-7.0
+PVF,Placerville,Placerville,CA,USA,38.72421806,-120.753325,,America/Los_Angeles,-7.0
+Q17,Boonville,Boonville,CA,USA,39.0126775,-123.3827864,,America/Los_Angeles,-7.0
+Q21,Brownsville,Brownsville,CA,USA,39.45544417,-121.2913511,,America/Los_Angeles,-7.0
+Q25,Dinsmore,Dinsmore,CA,USA,40.49291944,-123.5997589,,America/Los_Angeles,-7.0
+Q31,Sequoia ,Visalia,CA,USA,36.44856139,-119.31900559999998,,America/Los_Angeles,-7.0
+Q49,Firebaugh,Firebaugh,CA,USA,36.85998861,-120.4644675,,America/Los_Angeles,-7.0
+Q53,Franklin ,Franklin,CA,USA,38.30491306,-121.4296736,,America/Los_Angeles,-7.0
+Q61,Georgetown,Georgetown,CA,USA,38.92111389,-120.8647944,,America/Los_Angeles,-7.0
+Q68,Pine Mountain Lake,Groveland,CA,USA,37.86166667,-120.1778889,,America/Los_Angeles,-7.0
+Q72,Hayfork,Hayfork,CA,USA,40.54708833,-123.1816953,,America/Los_Angeles,-7.0
+Q84,Mendota,Mendota,CA,USA,36.75800528,-120.3712794,,America/Los_Angeles,-7.0
+Q88,Paradise Skypark,Paradise,CA,USA,39.70960639,-121.6163617,,America/Los_Angeles,-7.0
+Q94,Rio Linda,Rio Linda,CA,USA,38.67601389,-121.4455092,,America/Los_Angeles,-7.0
+Q95,Ruth,Ruth,CA,USA,40.21125917,-123.2975231,,America/Los_Angeles,-7.0
+Q99,South County  of Santa Clara Co,San Martin,CA,USA,37.08158611,-121.59680559999998,,America/Los_Angeles,-7.0
+RAL,Riverside Municipal Airport,Riverside,CA,USA,33.95187528,-117.4451017,A,America/Los_Angeles,-7.0
+RBL,Red Bluff Municipal Airport,Red Bluff,CA,USA,40.15065667,-122.2522903,A,America/Los_Angeles,-7.0
+RDD,Redding Municipal Airport,Redding,CA,USA,40.50898361,-122.2934019,A,America/Los_Angeles,-7.0
+RHV,Reid-Hillview Airport of Santa Clara County,San Jose,CA,USA,37.33287306,-121.8197947,A,America/Los_Angeles,-7.0
+RIU,Rancho Murieta,Rancho Murieta,CA,USA,38.4887975,-121.1024447,,America/Los_Angeles,-7.0
+RIV,March ARB Airport,Riverside,CA,USA,33.88057333,-117.2594836,A,America/Los_Angeles,-7.0
+RNM,Ramona,Ramona,CA,USA,33.038905,-116.9136392,,America/Los_Angeles,-7.0
+SAC,Sacramento Executive Airport,Sacramento,CA,USA,38.51252389,-121.4934689,A,America/Los_Angeles,-7.0
+SAN,San Diego International Airport,San Diego,CA,USA,32.73355611,-117.1896567,A,America/Los_Angeles,-7.0
+SBA,Santa Barbara Municipal Airport,Santa Barbara,CA,USA,34.42621194,-119.8403733,A,America/Los_Angeles,-7.0
+SBD,San Bernardino International Airport,San Bernardino,CA,USA,34.09535361,-117.2348742,A,America/Los_Angeles,-7.0
+SBP,San Luis County Regional Airport,San Luis Obispo,CA,USA,35.23705806,-120.6423931,A,America/Los_Angeles,-7.0
+SCK,Stockton Metropolitan Airport,Stockton,CA,USA,37.89426694,-121.2386203,A,America/Los_Angeles,-7.0
+SDM,Brown Field Municipal Airport,San Diego,CA,USA,32.57230556,-116.98025,A,America/Los_Angeles,-7.0
+SEE,Gillespie Field,San Diego (El Cajon),CA,USA,32.82623111,-116.9724497,A,America/Los_Angeles,-7.0
+SFO,San Francisco International Airport,San Francisco,CA,USA,37.61900194,-122.3748433,A,America/Los_Angeles,-7.0
+SIY,Siskiyou County,Montague,CA,USA,41.78144167,-122.4681094,,America/Los_Angeles,-7.0
+SJC,Norman Y. Mineta San Jose International Airport,San Jose,CA,USA,37.36186194,-121.9290089,A,America/Los_Angeles,-7.0
+SMF,Sacramento International Airport,Sacramento,CA,USA,38.69542167,-121.5907669,A,America/Los_Angeles,-7.0
+SMO,Santa Monica Municipal Airport,Santa Monica,CA,USA,34.01582194,-118.4512961,A,America/Los_Angeles,-7.0
+SMX,Santa Maria Pub/Capt G Allan Hancock Field,Santa Maria,CA,USA,34.89924833,-120.4575825,A,America/Los_Angeles,-7.0
+SNA,John Wayne Airport-Orange County Airport,Santa Ana,CA,USA,33.67565861,-117.86822250000002,A,America/Los_Angeles,-7.0
+SNS,Salinas Municipal Airport,Salinas,CA,USA,36.66279222,-121.6063603,\N,America/Los_Angeles,-7.0
+SQL,San Carlos Airport,San Carlos,CA,USA,37.511855,-122.2495236,A,America/Los_Angeles,-7.0
+STS,Charles M. Schulz Sonoma County Airport,Santa Rosa,CA,USA,38.50897694,-122.8128803,A,America/Los_Angeles,-7.0
+SVE,Susanville Municipal,Susanville,CA,USA,40.37684111,-120.5730033,,America/Los_Angeles,-7.0
+SZP,Santa Paula,Santa Paula,CA,USA,34.34722167,-119.061215,,America/Los_Angeles,-7.0
+TCY,Tracy Municipal,Tracy,CA,USA,37.68910778,-121.4418172,,America/Los_Angeles,-7.0
+TLR,Mefford ,Tulare,CA,USA,36.15630556,-119.32616670000002,,America/Los_Angeles,-7.0
+TNP,Twentynine Palms,Twentynine Palms,CA,USA,34.13208528,-115.94583190000002,,America/Los_Angeles,-7.0
+TOA,Zamperini Field,Torrance,CA,USA,33.8033775,-118.3396,A,America/Los_Angeles,-7.0
+TRK,Juwata Airport,Truckee,CA,USA,39.32004222,-120.1395628,N,America/Los_Angeles,-7.0
+TRM,Jacqueline Cochran Regional Airport,Palm Springs,CA,USA,33.62789944,-116.1601194,A,America/Los_Angeles,-7.0
+TSP,Tehachapi Municipal,Tehachapi,CA,USA,35.13497222,-118.43925,,America/Los_Angeles,-7.0
+TVL,Lake Tahoe Airport,South Lake Tahoe,CA,USA,38.89388167,-119.9953347,A,America/Los_Angeles,-7.0
+UDD,Bermuda Dunes Airport,Palm Springs,CA,USA,33.7484375,-116.2748133,A,America/Los_Angeles,-7.0
+UKI,Ukiah Municipal Airport,Ukiah,CA,USA,39.12595722,-123.200855,\N,America/Los_Angeles,-7.0
+VCB,Nut Tree,Vacaville,CA,USA,38.37675167,-121.962455,,America/Los_Angeles,-7.0
+VCV,Southern California Logistics Airport,Victorville,CA,USA,34.593225,-117.3794667,A,America/Los_Angeles,-7.0
+VIS,Visalia Municipal Airport,Visalia,CA,USA,36.31866667,-119.3928889,A,America/Los_Angeles,-7.0
+VNY,Van Nuys Airport,Van Nuys,CA,USA,34.20980972,-118.4899733,A,America/Los_Angeles,-7.0
+WHP,Whiteman Airport,Los Angeles,CA,USA,34.25932528,-118.4134331,A,America/Los_Angeles,-7.0
+WJF,General WM J Fox Airfield,Lancaster,CA,USA,34.74095944,-118.2189489,A,America/Los_Angeles,-7.0
+WLW,Willows-Glenn County,Willows,CA,USA,39.51635389,-122.2175106,,America/Los_Angeles,-7.0
+WVI,Watsonville Municipal Airport,Watsonville,CA,USA,36.93573,-121.7896178,A,America/Los_Angeles,-7.0

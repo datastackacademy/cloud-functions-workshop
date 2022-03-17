@@ -1,0 +1,58 @@
+iata,name,city,state,country,lat,long,dst,tz,utc_offset
+16S,Myrtle Creek Municipal,Myrtle Creek,OR,USA,42.99845056,-123.3095092,,America/Los_Angeles,-7.0
+26U,McDermitt State,McDermitt,OR,USA,42.00211083,-117.7231972,,America/Los_Angeles,-7.0
+2S6,Sportsman Airpark,Newberg,OR,USA,45.29567333,-122.9553783,,America/Los_Angeles,-7.0
+2S7,Chiloquin State,Chiloquin,OR,USA,42.58319167,-121.8761261,,America/Los_Angeles,-7.0
+35S,Wasco State,Wasco,OR,USA,45.58944444,-120.6741667,,America/Los_Angeles,-7.0
+3S4,Illinois Valley,Illinois Valley (Cave Junction),OR,USA,42.10372417,-123.6822911,,America/Los_Angeles,-7.0
+3S8,Grants Pass,Grants Pass,OR,USA,42.51011722,-123.3879894,,America/Los_Angeles,-7.0
+3S9,Condon State-Pauling ,Condon,OR,USA,45.24651889,-120.1664233,,America/Los_Angeles,-7.0
+4S1,Gold Beach Muni,Gold Beach,OR,USA,42.41344444,-124.4242742,,America/Los_Angeles,-7.0
+4S2,Hood River,Hood River,OR,USA,45.67261833,-121.5364625,,America/Los_Angeles,-7.0
+4S3,Joseph State,Joseph,OR,USA,45.35709583,-117.2532244,,America/Los_Angeles,-7.0
+4S9,Portland-Mulino,Mulino (Portland),OR,USA,45.21632417,-122.5900839,,America/Los_Angeles,-7.0
+56S,Seaside Municipal,Seaside,OR,USA,46.01649694,-123.90541670000002,,America/Los_Angeles,-7.0
+5J0,John Day State,John Day,OR,USA,44.40416667,-118.9625,,America/Los_Angeles,-7.0
+61J,Portland Downtown Heliport,Portland,OR,USA,45.52527778,-122.6709289,,America/Los_Angeles,-7.0
+61S,Cottage Grove State,Cottage Grove,OR,USA,43.79984528,-123.0289678,,America/Los_Angeles,-7.0
+62S,Christmas Valley,Christmas Valley,OR,USA,43.23653139,-120.6660967,,America/Los_Angeles,-7.0
+6S2,Florence Muni,Florence,OR,USA,43.97901,-124.1095631,,America/Los_Angeles,-7.0
+77S,Hobby ,Creswell,OR,USA,43.93206889,-123.0067483,,America/Los_Angeles,-7.0
+7S5,Independence State,Independence,OR,USA,44.86676444,-123.1982475,,America/Los_Angeles,-7.0
+9S9,Lexington,Lexington,OR,USA,45.45263139,-119.6886361,,America/Los_Angeles,-7.0
+AST,Astoria Regional Airport,Astoria,OR,USA,46.15797222,-123.8786944,A,America/Los_Angeles,-7.0
+BKE,Baker City Municipal Airport,Baker City,OR,USA,44.83733333,-117.80908329999998,\N,America/Los_Angeles,-7.0
+BNO,Burns Municipal Airport,Burns,OR,USA,43.59212778,-118.9549789,A,America/Los_Angeles,-7.0
+BOK,Brookings,Brookings,OR,USA,42.07455556,-124.2900939,,America/Los_Angeles,-7.0
+CVO,Corvallis Municipal Airport,Corvallis,OR,USA,44.49719361,-123.2898297,A,America/Los_Angeles,-7.0
+DLS,Columbia Gorge Regional the Dalles Municipal Airport,The Dalles,OR,USA,45.61854556,-121.1673439,A,America/Los_Angeles,-7.0
+EUG,Mahlon Sweet Field,Eugene,OR,USA,44.12326,-123.2186856,A,America/Los_Angeles,-7.0
+HIO,Portland Hillsboro Airport,Hillsboro (Portland),OR,USA,45.54039389,-122.9498258,A,America/Los_Angeles,-7.0
+HRI,Mattala Rajapaksa International Airport,Hermiston,OR,USA,45.82822222,-119.2591667,N,America/Los_Angeles,-7.0
+LGD,La Grande/Union County Airport,La Grande,OR,USA,45.29020944,-118.0071108,A,America/Los_Angeles,-7.0
+LKV,Lake County Airport,Lakeview,OR,USA,42.16111111,-120.3990703,A,America/Los_Angeles,-7.0
+LMT,Crater Lake-Klamath Regional Airport,Klamath Falls,OR,USA,42.15614361,-121.7332081,A,America/Los_Angeles,-7.0
+MFR,Rogue Valley International Medford Airport,Medford,OR,USA,42.37422778,-122.8734978,A,America/Los_Angeles,-7.0
+MMV,McMinnville Muni,McMinnville,OR,USA,45.19444444,-123.1359444,,America/Los_Angeles,-7.0
+ONO,Ontario Municipal Airport,Ontario,OR,USA,44.02052417,-117.013635,A,America/Boise,-6.0
+ONP,Newport Municipal Airport,Newport,OR,USA,44.58036111,-124.0579167,A,America/Los_Angeles,-7.0
+OR33,Boardman,Boardman,OR,USA,45.814825,-119.8205006,,America/Los_Angeles,-7.0
+OTH,Southwest Oregon Regional Airport,North Bend,OR,USA,43.41713889,-124.2460278,A,America/Los_Angeles,-7.0
+PDT,Eastern Oregon Regional At Pendleton Airport,Pendleton,OR,USA,45.69505556,-118.8414444,A,America/Los_Angeles,-7.0
+PDX,Portland International Airport,Portland,OR,USA,45.58872222,-122.5975,A,America/Los_Angeles,-7.0
+RBG,Roseburg Regional,Roseburg,OR,USA,43.23878306,-123.3558617,,America/Los_Angeles,-7.0
+RDM,Roberts Field,Redmond,OR,USA,44.25406722,-121.1499633,A,America/Los_Angeles,-7.0
+S03,Ashland Muni-Sumner Parker ,Ashland,OR,USA,42.19028361,-122.6606283,,America/Los_Angeles,-7.0
+S05,Bandon State,Bandon,OR,USA,43.08733083,-124.4095578,,America/Los_Angeles,-7.0
+S07,Bend Muni,Bend,OR,USA,44.09483333,-121.2006389,,America/Los_Angeles,-7.0
+S12,Albany Municipal,Albany,OR,USA,44.63781639,-123.0594486,,America/Los_Angeles,-7.0
+S21,Sunriver,Sunriver,OR,USA,43.87633333,-121.45305559999998,,America/Los_Angeles,-7.0
+S30,Lebanon State,Lebanon,OR,USA,44.529845,-122.92953359999998,,America/Los_Angeles,-7.0
+S33,City-County,Madras,OR,USA,44.66623139,-121.1631,,America/Los_Angeles,-7.0
+S39,Prineville,Prineville,OR,USA,44.28699389,-120.9038328,,America/Los_Angeles,-7.0
+S45,Siletz Bay State,Siletz Bay (Gleneden Beach),OR,USA,44.87761139,-124.0284472,,America/Los_Angeles,-7.0
+S47,Tillamook,Tillamook,OR,USA,45.41824194,-123.8143839,,America/Los_Angeles,-7.0
+SLE,Salem Municipal Airport/McNary Field,Salem,OR,USA,44.90952778,-123.0025,A,America/Los_Angeles,-7.0
+SPB,Charlotte Amalie Harbor Seaplane Base,Scappoose,OR,USA,45.77250444,-122.8623611,A,America/Los_Angeles,-7.0
+TTD,Portland Troutdale Airport,Portland,OR,USA,45.54936889,-122.4012519,A,America/Los_Angeles,-7.0
+UAO,Aurora State,Aurora,OR,USA,45.24713889,-122.7700556,,America/Los_Angeles,-7.0

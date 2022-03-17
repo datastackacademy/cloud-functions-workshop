@@ -1,0 +1,66 @@
+iata,name,city,state,country,lat,long,dst,tz,utc_offset
+0S7,Dorothy Scott,Oroville,WA,USA,48.958965,-119.4119622,,America/Los_Angeles,-7.0
+0S9,Jefferson County International,Port Townsend,WA,USA,48.04981361,-122.8012792,,America/Los_Angeles,-7.0
+1S0,Pierce County ,Puyallup,WA,USA,47.10391667,-122.28719440000002,,America/Los_Angeles,-7.0
+1S5,Sunnyside Municipal,Sunnyside,WA,USA,46.32763139,-119.97059640000002,,America/Los_Angeles,-7.0
+2S1,Vashon Municipal,Vashon,WA,USA,47.45815333,-122.4773506,,America/Los_Angeles,-7.0
+2S8,Wilbur,Wilbur,WA,USA,47.75320639,-118.7438936,,America/Los_Angeles,-7.0
+33S,Pru ,Ritzville,WA,USA,47.12487194,-118.39275390000002,,America/Los_Angeles,-7.0
+55S,Packwood,Packwood,WA,USA,46.60400083,-121.6778664,,America/Los_Angeles,-7.0
+63S,Colville Municipal,Colville,WA,USA,48.54156944,-117.8844247,,America/Los_Angeles,-7.0
+68S,Davenport,Davenport,WA,USA,47.65404528,-118.1677519,,America/Los_Angeles,-7.0
+72S,Rosalia Municipal,Rosalia,WA,USA,47.23683778,-117.4210244,,America/Los_Angeles,-7.0
+74S,Anacortes,Anacortes,WA,USA,48.4989925,-122.6623956,,America/Los_Angeles,-7.0
+8S2,Cashmere-Dryden,Cashmere,WA,USA,47.51484611,-120.4848025,,America/Los_Angeles,-7.0
+ALW,Walla Walla Regional Airport,Walla Walla,WA,USA,46.09456167,-118.2880367,A,America/Los_Angeles,-7.0
+AWO,Arlington Municipal,Arlington,WA,USA,48.16074833,-122.1590208,,America/Los_Angeles,-7.0
+BFI,Boeing Field King County International Airport,Seattle,WA,USA,47.52998917,-122.3019561,A,America/Los_Angeles,-7.0
+BLI,Bellingham International Airport,Bellingham,WA,USA,48.79275,-122.5375278,A,America/Los_Angeles,-7.0
+BVS,Breves Airport,Burlington/Mount Vernon,WA,USA,48.47088889,-122.4208611,S,America/Los_Angeles,-7.0
+CLM,William R Fairchild International Airport,Port Angeles,WA,USA,48.12019444,-123.4996944,A,America/Los_Angeles,-7.0
+CLS,Chehalis Centralia Airport,Chehalis,WA,USA,46.67649194,-122.9792967,A,America/Los_Angeles,-7.0
+DEW,Deer Park,Deer Park,WA,USA,47.96663889,-117.4266667,,America/Los_Angeles,-7.0
+EAT,Pangborn Memorial Airport,Wenatchee,WA,USA,47.39886111,-120.2068333,A,America/Los_Angeles,-7.0
+ELN,Bowers ,Ellensburg,WA,USA,47.03302778,-120.53069440000002,,America/Los_Angeles,-7.0
+EPH,Ephrata Muni,Ephrata,WA,USA,47.30758333,-119.5158889,,America/Los_Angeles,-7.0
+FHR,Friday Harbor,Friday Harbor,WA,USA,48.52197222,-123.0243611,,America/Los_Angeles,-7.0
+GEG,Spokane International Airport,Spokane,WA,USA,47.61985556,-117.5338425,A,America/Los_Angeles,-7.0
+HQM,Bowerman Airport,Hoquiam,WA,USA,46.97120167,-123.9365581,A,America/Los_Angeles,-7.0
+KLS,Southwest Washington Regional Airport,Kelso,WA,USA,46.118,-122.8983889,A,America/Los_Angeles,-7.0
+MWH,Grant County International Airport,Moses Lake,WA,USA,47.20770806,-119.3201897,A,America/Los_Angeles,-7.0
+OLM,Olympia Regional Airport,Olympia,WA,USA,46.9705,-122.90220829999998,A,America/Los_Angeles,-7.0
+OMK,Omak,Omak,WA,USA,48.46440222,-119.5180503,,America/Los_Angeles,-7.0
+ORS,Orcas Island,Eastsound,WA,USA,48.70816,-122.91379609999998,,America/Los_Angeles,-7.0
+PAE,Snohomish County (Paine Field) Airport,Everett,WA,USA,47.90762861,-122.2815892,A,America/Los_Angeles,-7.0
+PSC,Tri Cities Airport,Pasco,WA,USA,46.26468028,-119.1190292,A,America/Los_Angeles,-7.0
+PUW,Pullman Moscow Regional Airport,"Pullman/Moscow,ID",WA,USA,46.74386111,-117.10958329999998,A,America/Los_Angeles,-7.0
+PWT,Bremerton National Airport,Bremerton,WA,USA,47.49275361,-122.76242859999998,A,America/Los_Angeles,-7.0
+RLD,Richland,Richland,WA,USA,46.305635,-119.3041853,,America/Los_Angeles,-7.0
+RNT,Renton Municipal Airport,Renton,WA,USA,47.49313889,-122.21575,A,America/Los_Angeles,-7.0
+S10,Chelan Muni,Chelan,WA,USA,47.86597139,-119.9427053,,America/Los_Angeles,-7.0
+S18,Forks,Forks,WA,USA,47.94146583,-124.3929867,,America/Los_Angeles,-7.0
+S23,Ione Municipal,Ione,WA,USA,48.70727528,-117.41260359999998,,America/Los_Angeles,-7.0
+S31,Lopez Island,Lopez,WA,USA,48.48259944,-122.9368444,,America/Los_Angeles,-7.0
+S40,Prosser,Prosser,WA,USA,46.212355,-119.7928122,,America/Los_Angeles,-7.0
+S43,Harvey ,Snohomish,WA,USA,47.90815306,-122.1054072,,America/Los_Angeles,-7.0
+S50,Auburn Municipal,Auburn,WA,USA,47.32815583,-122.2265092,,America/Los_Angeles,-7.0
+S52,Methow Valley State,Winthrop,WA,USA,48.42070056,-120.1470264,,America/Los_Angeles,-7.0
+S60,Kenmore Air Harbor Inc,Kenmore,WA,USA,47.75482,-122.2592931,,America/Los_Angeles,-7.0
+S70,Othello Muni,Othello,WA,USA,46.79486278,-119.0802875,,America/Los_Angeles,-7.0
+S93,Cle Elum Municipal,Cle Elum,WA,USA,47.18317583,-120.884525,,America/Los_Angeles,-7.0
+S94,Whitman County Memorial,Colfax,WA,USA,46.8584975,-117.4137964,,America/Los_Angeles,-7.0
+S97,Anderson ,Brewster,WA,USA,48.10486806,-119.7206128,,America/Los_Angeles,-7.0
+SEA,Seattle Tacoma International Airport,Seattle,WA,USA,47.44898194,-122.3093131,A,America/Los_Angeles,-7.0
+SFF,Felts Field,Spokane,WA,USA,47.68281806,-117.32255829999998,A,America/Los_Angeles,-7.0
+SHN,Sanderson Field,Shelton,WA,USA,47.23355556,-123.1475556,A,America/Los_Angeles,-7.0
+TDO,Toledo-Winlock Ed Carlson Memorial ,Toledo,WA,USA,46.47709083,-122.80686,,America/Los_Angeles,-7.0
+TIW,Tacoma Narrows Airport,Tacoma,WA,USA,47.26793111,-122.5780997,A,America/Los_Angeles,-7.0
+UIL,Quillayute,Forks,WA,USA,47.93714444,-124.5612497,,America/Los_Angeles,-7.0
+VUO,Pearson Airpark,Vancouver,WA,USA,45.6204525,-122.6564883,,America/Los_Angeles,-7.0
+W04,Ocean Shores Municipal,Ocean Shores,WA,USA,47.00369806,-124.143785,,America/Los_Angeles,-7.0
+W33,Friday Harbor,Friday Harbor,WA,USA,48.53732194,-123.0096236,,America/Los_Angeles,-7.0
+WA10,Grove ,Camas/Washougal,WA,USA,45.62777778,-122.40416670000002,,America/Los_Angeles,-7.0
+WA21,Grand Coulee Dam,Electric City,WA,USA,47.92348361,-119.0805789,,America/Los_Angeles,-7.0
+WA31,Whidbey Air Park,Langley,WA,USA,48.01814917,-122.4384789,,America/Los_Angeles,-7.0
+WA43,Odessa Municipal,Odessa,WA,USA,47.3582025,-118.6733264,,America/Los_Angeles,-7.0
+YKM,Yakima Air Terminal McAllister Field,Yakima,WA,USA,46.56816972,-120.5440594,A,America/Los_Angeles,-7.0

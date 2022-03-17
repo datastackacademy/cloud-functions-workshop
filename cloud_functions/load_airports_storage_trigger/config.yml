@@ -1,0 +1,3 @@
+gcp_project: deb-01
+bigquery_dataset: sandbox
+bigquery_table: tmp_airports_webinar

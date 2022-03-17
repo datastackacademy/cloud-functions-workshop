@@ -125,8 +125,7 @@ a pretty cool package 😉
 A Google Cloud Function is simply a directory that contains python code. The most simple version of a function is a directory
 with a `main.py` and a `requirements.txt` file. 
 
-Create a directory called `/cloud_functions/howdoi` and create two files under it for `main.py` and `requirements.txt`. Edit 
-your `main.py` to include the skeleton of you Cloud Function:
+Create a directory called `./cloud_functions/howdoi` and create two files under it for `main.py` and `requirements.txt`. Edit your `main.py` to include the skeleton of you Cloud Function:
 
 ```python
 from flask import Request
@@ -220,10 +219,6 @@ Your function is running on port 8080 and is ready to use now. You can test it b
 ```bash
 curl -X POST -d '{"question": "parse a date string in python"}' -H "Content-type: application/json" http://localhost:8080
 ```
-
-Or use Postman:
-
-![postman example](imgs/postman_01.png)
 
 To stop your local function just CTRL+C out of the terminal.
 
@@ -330,24 +325,299 @@ gcloud functions logs read dsa-howdoi-function
 
 **NOTE:** `gcloud functions deploy` deploys all your local files onto the cloud. This includes any subdirectories and files under your cloud function directory. To ignore files you can add a `.gcloudignore` file in the same syntax as `.gitignore` to exclude things that you don't want to be uploaded.
 
-## Deleting your Cloud Function
-
-To delete your function, run:
-
-```bash
-gcloud functions list
-
-NAME                                 STATUS  TRIGGER       REGION
-dsa-howdoi-function                  ACTIVE  HTTP Trigger  us-central1
-
-
-gcloud functions delete dsa-howdoi-function --region=us-central1
 ```
 
 
-# Challenge Projects
 
-## Wikipedia Summary Function
+# Storage Triggered Function
 
-Create a Cloud Function that returns a 2 sentence summary for a wikipedia topic. Use the [pypi wikipedia](https://pypi.org/project/wikipedia/) package.
+## Overview
 
+From the [Cloud Functions documentation](https://cloud.google.com/functions/docs):
+
+> Google Cloud Functions is a lightweight, event-based, asynchronous compute solution that allows you to create small, single-purpose 
+> functions that respond to cloud events without the need to manage a server or a runtime environment.
+
+
+Cloud Functions are the easy to execute code on various Cloud. This is where you package python (or other supported languages, ie: Java, Go, ...) code to run on the Cloud on-demand. This is completely serverless and often referred to as **micro-service** data processing. You can use Cloud Functions to trigger to process data on-demand based on HTTP requests or when an action is taken on the Cloud like a file being loaded onto GCS or and event posted to Cloud Pub/Sub.
+
+Cloud Functions are the most effective way to write **event-based micro-services** to process data. 
+
+They work the best for handling smaller data volumes like single files (csv, audio, video, ...) typically within a GB or less; while other tools like Spark (Cloud Dataproc) are better for processing data at bulk.
+
+
+# Load Airports 
+
+In this section, we will create a GCS triggered Cloud function that loads an airports data file from Cloud Storage onto BigQuery.
+
+We will use pandas to read the data file and create a helper function which uses the `google.cloud.bigquery` module to load the dataframe into BigQuery.
+
+Got to the directory called `cloud_functions/load_airports_storage_trigger`:
+
+```bash
+cd ./cloud_functions/load_airports_storage_trigger
+```
+
+View the content of the file called `utils/airports_processor.py`:
+
+```python
+from time import perf_counter
+import pandas as pd
+from google.cloud import bigquery
+
+from utils import logger
+
+
+def load_from_file(file_path:str) -> pd.DataFrame:
+    logger.info(f"loading airports data file from: {file_path}")
+    # read the airports file
+    df = pd.read_csv(file_path, header=0)
+    # bugfix: rename longitude column from `long` to `lng`
+    if 'long' in df.columns:
+        df = df.rename(columns={'long': 'lng'})
+    return df
+
+
+def load_bigquery_table(data: pd.DataFrame, table_name:str) -> int:
+    # make sure data is a valid pandas DataFrame
+    assert isinstance(data, pd.DataFrame) and len(data.index), "data must be a valid DataFrame and include records!"
+    # setup bigquery client
+    client = bigquery.Client()
+    table = bigquery.Table(table_name)
+    # provide a table schema that's used to create bigquery table
+    schema = [
+            bigquery.SchemaField('iata', 'STRING', mode='REQUIRED'),
+            bigquery.SchemaField('name', 'STRING', mode='REQUIRED'),
+            bigquery.SchemaField('city', 'STRING', mode='NULLABLE'),
+            bigquery.SchemaField('state', 'STRING', mode='NULLABLE'),
+            bigquery.SchemaField('country', 'STRING', mode='NULLABLE'),
+            bigquery.SchemaField('lat', 'FLOAT', mode='NULLABLE'),
+            bigquery.SchemaField('lng', 'FLOAT', mode='NULLABLE'),
+            bigquery.SchemaField('dst', 'STRING', mode='NULLABLE'),
+            bigquery.SchemaField('tz', 'STRING', mode='NULLABLE'),
+            bigquery.SchemaField('utc_offset', 'FLOAT', mode='NULLABLE'),
+            ]
+    # bigquery job config to set various load configuration
+    jc = bigquery.LoadJobConfig(
+        source_format='PARQUET',
+        write_disposition='WRITE_APPEND',
+        create_disposition='CREATE_IF_NEEDED',
+        autodetect=False,
+        schema=schema,
+    )
+    logger.info("preparing to write {} records to bigquery {} table...".format(len(data.index), table_name))
+    t0 = perf_counter()
+    # use load from dataframe client method
+    job = client.load_table_from_dataframe(data, destination=table, job_config=jc)
+    job.result()
+
+    # print logs
+    t = perf_counter() - t0
+    logger.info("write completed")
+    table = client.get_table(table_name)
+    logger.info("loaded {} records in {:0.3f} seconds. {} rows/sec".format(len(data.index), t, round(len(data) / t, 0)))
+    logger.info("bigquery table {} has {} rows".format(table.full_table_id, table.num_rows))
+
+    return table.num_rows
+
+```
+
+This module includes two main function:
+
+1. `load_from_file()`:
+
+    Using pandas we will read our airports data file into a dataframe and perform some basic checks and transforms. Since we added the `gcsfs` pypi package to our _requirements.txt_ file, pandas is able to directly read from `gs://` paths.
+
+1. `load_bigquery_table()`:
+
+    Using the bigquery client `load_table_from_dataframe()` method, we'll load the dataframe into our BigQuery table. This method is also able to create the table if needed using the settings provided.
+
+**NOTE:** The airport data files used in this episode are included under: `./data/`
+
+<br/><br/>
+
+View the content of `main.py`:
+
+```python
+# local imports
+from utils import logger, config
+from utils.airports_processor import load_from_file, load_bigquery_table
+
+
+def dsadeb_airports_loader_storage_trigger(event, context):
+
+    try:
+        # lets print some logs regarding our trigger
+        logger.info(f"Event ID: {context.event_id}, Event Type: '{context.event_type}'")
+
+        # get the event information including bucket and files name
+        bucket = event['bucket']
+        filename = event['name']
+        metadata = event['metageneration']
+        created_time = event['timeCreated']
+        logger.info(f"bucket: '{bucket}', file: '{filename}' created: {str(created_time)}")
+        
+        # setup the config params
+        airport_filepath = f"gs://{bucket}/{filename}"
+        # load the airports file into dataframe
+        df = load_from_file(airport_filepath)
+
+        # get bigquery table configuration (from config.yml)
+        project = config['gcp_project']
+        dataset = config['bigquery_dataset']
+        table_name = config['bigquery_table']
+        bigquery_tablename = f"{project}.{dataset}.{table_name}"
+        # load the dataframe into bigquery
+        load_bigquery_table(df, bigquery_tablename)
+
+        # print success
+        logger.info("function completed successfully")
+
+    except Exception as err:
+        # print the error message to logs
+        logger.error(str(err))
+
+```
+
+**NOTE:**
+
+1. This function gets automatically called by google cloud as soon as someone loads a new data file to a cloud storage bucket.
+2. You can see that our function now takes two parameters called `event` and `context`. _event_ includes information about the google cloud storage event that has triggered this function call while _context_ includes information about this particular function instance.
+3. `event` is a python dict containing the google cloud storage bucket and file path that has triggered the function.
+4. We use the same _utils_ functions to process and load our data file onto bigquery.
+
+<br/>
+
+## Setup
+
+Unlike the Cloud Function example in our previous episode, this Function uses other Cloud services such as Cloud Storage and BigQuery. Since we use other services, we need to ensure that our function is setup with a service account that has permission to use those services. In this example, we will use the same service account called `deb-01-sa`. You must create and use your own service account.
+
+Before testing our function, you need to:
+
+1. Create a service account to use with this Function. We're assuming you already have a service account. You can also create one specifically for this function; in a production environment make sure you always do this! Do NOT use your default one.
+1. Create a Storage Bucket to upload our airports file to.
+1. Upload source airports data file onto a GCS bucket
+1. Create a BigQuery dataset for this example. We're assuming you already have one.
+1. Ensure your service account has correct permissions to access both Storage bucket and BigQuery 
+1. Ensure your service account has permission to publish to Pub/Sub to trigger the Cloud Function
+
+### Create a GCS bucket and upload airports file
+
+```bash
+# create a bucket, replace your project name and location
+# gsutil mb -p <PROJECT_ID> -c standard -l <REGION> -b on gs://<BUCKET_NAME>
+gsutil mb -p deb-01 -c standard -l us-central1 -b on gs://<%YOUR_BUCKET_NAME%>
+
+# upload airports file to your bucket
+gsutil cp ./data/deb-airports-OR.csv gs://dsa-deb-ch8/airports/
+
+# list your bucket for the airports file path
+gsutil ls gs://dsa-deb-ch8/airports
+
+```
+
+### Set IAM Roles for your Service Account
+
+Before testing your function ensure that your current service account set by `GOOGLE_APPLICATION_CREDENTIALS` has permission to access both your GCS bucket and BigQuery. Make sure the service account is `Storage Admin` and `BigQuery Admin`. 
+
+**NOTE:** In production, always create a new service account for your function.
+
+Use the Cloud Console or `gcloud` to set the permissions for your service account. It's much easier to use Cloud Console; but we're including `gcloud` instructions here:
+
+```bash
+# list your service accounts on this project
+gcloud iam service-accounts list
+
+DISPLAY NAME                            EMAIL                                              DISABLED
+deb-01-sa                               deb-01-sa@deb-01.iam.gserviceaccount.com           False
+App Engine default service account      deb-01@appspot.gserviceaccount.com                 False
+Compute Engine default service account  88141792430-compute@developer.gserviceaccount.com  False
+
+# here we're using the service account: deb-01-sa@deb-01.iam.gserviceaccount.com
+# list roles on your service account, replace your project name and service account name
+gcloud projects get-iam-policy deb-01  \
+ --flatten="bindings[].members" \
+ --format='table(bindings.role)' \
+ --filter="bindings.members:deb-01-sa@deb-01.iam.gserviceaccount.com"
+
+ROLE
+roles/appengine.appCreator
+roles/appengine.appViewer
+roles/bigquery.admin
+roles/bigquery.dataEditor
+roles/bigquery.dataViewer
+roles/datastore.owner
+roles/file.editor
+roles/file.viewer
+roles/logging.logWriter
+roles/pubsub.editor
+roles/storage.objectAdmin
+
+# make sure you have bigquery.dataEditor and storage.objectAdmin
+# you can add these by the following commands
+# gcloud projects add-iam-policy-binding PROJECT_ID \
+#     --member="serviceAccount:SERVICE_ACCOUNT_ID@PROJECT_ID.iam.gserviceaccount.com" \
+#     --role="ROLE_NAME"
+gcloud projects add-iam-policy-binding deb-01 \
+    --member="serviceAccount:deb-01-sa@deb-01.iam.gserviceaccount.com" \
+    --role="roles/bigquery.dataEditor"
+
+gcloud projects add-iam-policy-binding deb-01 \
+    --member="serviceAccount:deb-01-sa@deb-01.iam.gserviceaccount.com" \
+    --role="roles/storage.admin"
+```
+
+Since Storage Triggers actually use Pub/Sub events in the background to trigger functions, we need to ensure that our service account associated with this function has access to publish to Pub/Sub. Make sure you add at least `roles/pubsub.publisher` role to your service account. You can do this by `gcloud` or on the Cloud Console.
+
+```bash
+gcloud projects add-iam-policy-binding deb-01 \
+    --member="serviceAccount:deb-01-sa@deb-01.iam.gserviceaccount.com" \
+    --role="roles/pubsub.admin"
+
+gcloud projects add-iam-policy-binding deb-01 \
+    --member="serviceAccount:deb-01-sa@deb-01.iam.gserviceaccount.com" \
+    --role="roles/pubsub.publisher"
+```
+
+## Deploy our Function to Google Cloud
+
+Storage triggered functions can NOT be tested locally. Deploy your function using `gcloud`:
+
+```bash
+gcloud functions deploy dsadeb_airports_loader_storage_trigger \
+    --runtime python37 \
+    --trigger-resource gs://dsa-deb-ch8 \
+    --trigger-event google.storage.object.finalize \
+    --service-account=deb-01-sa@deb-01.iam.gserviceaccount.com \
+    --region=us-central1
+```
+
+**NOTES:**
+
+- `--trigger-resource`: specifies the Storage bucket that we like to trigger our function with.
+- `--trigger-event`: set to trigger our function based on objects being created on our bucket. See the other available trigger events on [google documentation](https://cloud.google.com/functions/docs/calling/storage).
+- `--service-account` and `--region` specify our service account and region for this function.
+
+Read the [google documentation](https://cloud.google.com/functions/docs/calling/storage) for complete guide on triggering your function by storage events.
+
+## Testing our Function
+
+To test our function, we can load a airports data file to our storage bucket and view our function logs:
+
+```bash
+# load a file into our storage bucket. change your gcs bucket name and path
+gsutil cp ./data/deb-airports-AK.csv gs://dsa-deb-ch8/airports/
+
+# wait several sections and view the logs for your function. check to see if you see messages regarding the data file you just loaded
+gcloud functions logs read dsadeb_airports_loader_storage_trigger
+```
+
+
+# Deleting Your Functions
+
+You can delete your functions by running:
+
+```bash
+gcloud functions delete dsadeb_howdoi --quiet
+gcloud functions delete dsadeb_airports_loader_storage_trigger --quiet
+```

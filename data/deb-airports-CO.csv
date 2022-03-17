@@ -1,0 +1,50 @@
+iata,name,city,state,country,lat,long,dst,tz,utc_offset
+00V,Meadow Lake,Colorado Springs,CO,USA,38.94574889,-104.5698933,,America/Denver,-6.0
+0V2,Harriet Alexander ,Salida,CO,USA,38.53916389,-106.0458483,,America/Denver,-6.0
+1V5,Boulder Muni,Boulder,CO,USA,40.03942972,-105.2258217,,America/Denver,-6.0
+1V6,Fremont County,Canon City,CO,USA,38.42838111,-105.1054994,,America/Denver,-6.0
+1V9,Blake ,Delta,CO,USA,38.78539722,-108.0636611,,America/Denver,-6.0
+20V,McElroy Airfield,Kremmling,CO,USA,40.05367972,-106.3689467,,America/Denver,-6.0
+2V1,Stevens ,Pagosa Springs,CO,USA,37.277505,-107.0558742,,America/Denver,-6.0
+2V2,Vance Brand,Longmont,CO,USA,40.16367139,-105.1630369,,America/Denver,-6.0
+2V5,Wray Municipal,Wray,CO,USA,40.10032333,-102.24096,,America/Denver,-6.0
+2V6,Yuma Municipal,Yuma,CO,USA,40.10415306,-102.7129869,,America/Denver,-6.0
+3V4,Fort Morgan Municipal,Fort Morgan,CO,USA,40.33423194,-103.8039508,,America/Denver,-6.0
+48V,Tri-County,Erie,CO,USA,40.010225,-105.047975,,America/Denver,-6.0
+4V0,Rangely,Rangely,CO,USA,40.09469917,-108.7612172,,America/Denver,-6.0
+4V1,Johnson ,Walsenburg,CO,USA,37.69640056,-104.7838747,,America/Denver,-6.0
+6V6,Hopkins ,Nucla,CO,USA,38.23879833,-108.5632597,,America/Denver,-6.0
+7V1,Buena Vista Muni,Buena Vista,CO,USA,38.81416194,-106.1206939,,America/Denver,-6.0
+AKO,Colorado Plains Regional Airport,Akron,CO,USA,40.17563333,-103.2220278,A,America/Denver,-6.0
+ALS,San Luis Valley Regional Bergman Field,Alamosa,CO,USA,37.43491667,-105.86655559999998,A,America/Denver,-6.0
+APA,Centennial Airport,Denver,CO,USA,39.57012833,-104.8492942,A,America/Denver,-6.0
+ASE,Aspen-Pitkin Co/Sardy Field,Aspen,CO,USA,39.22316,-106.868845,A,America/Denver,-6.0
+BJC,Rocky Mountain Metropolitan Airport,Denver,CO,USA,39.90878667,-105.1172158,A,America/Denver,-6.0
+CAG,Cagliari Elmas Airport,Craig,CO,USA,40.49522139,-107.5216467,E,America/Denver,-6.0
+CEZ,Cortez Municipal Airport,Cortez,CO,USA,37.30299778,-108.6280658,A,America/Denver,-6.0
+COS,City of Colorado Springs Municipal Airport,Colorado Springs,CO,USA,38.80580556,-104.70025,A,America/Denver,-6.0
+DEN,Denver International Airport,Denver,CO,USA,39.85840806,-104.6670019,A,America/Denver,-6.0
+DRO,Durango La Plata County Airport,Durango,CO,USA,37.15151667,-107.7537692,A,America/Denver,-6.0
+EEO,Meeker,Meeker,CO,USA,40.04886222,-107.8859067,,America/Denver,-6.0
+EGE,Eagle County Regional Airport,Eagle,CO,USA,39.64256778,-106.9176953,A,America/Denver,-6.0
+FNL,Northern Colorado Regional Airport,Fort Collins/Loveland,CO,USA,40.45182722,-105.0113356,A,America/Denver,-6.0
+FTG,Front Range,Denver,CO,USA,39.78525,-104.5431389,,America/Denver,-6.0
+GJT,Grand Junction Regional Airport,Grand Junction,CO,USA,39.1224125,-108.5267347,A,America/Denver,-6.0
+GNB,Grenoble-Isère Airport,Granby,CO,USA,40.08970806,-105.9172367,E,America/Denver,-6.0
+GUC,Gunnison Crested Butte Regional Airport,Gunnison,CO,USA,38.53396333,-106.9331817,A,America/Denver,-6.0
+GXY,Greeley–Weld County Airport,Greeley,CO,USA,40.43561833,-104.6321156,A,America/Denver,-6.0
+HDN,Yampa Valley Airport,Hayden,CO,USA,40.48118028,-107.2176597,A,America/Denver,-6.0
+HEQ,Holyoke,Holyoke,CO,USA,40.56943056,-102.2726875,,America/Denver,-6.0
+ITR,Francisco Vilela do Amaral Airport,Burlington,CO,USA,39.2425,-102.28538890000002,S,America/Denver,-6.0
+LAA,Lamar Municipal Airport,Lamar,CO,USA,38.06969444,-102.6885,A,America/Denver,-6.0
+LHX,La Junta Muni,La Junta,CO,USA,38.05134111,-103.5106908,,America/Denver,-6.0
+LIC,Limon Municipal,Limon,CO,USA,39.272765,-103.6663392,,America/Denver,-6.0
+LXV,Lake County,Leadville,CO,USA,39.2202675,-106.3166906,,America/Denver,-6.0
+MTJ,Montrose Regional Airport,Montrose,CO,USA,38.50886722,-107.89383329999998,A,America/Denver,-6.0
+MVI,Monte Vista Muni,Monte Vista,CO,USA,37.52855833,-106.0460533,,America/Denver,-6.0
+PUB,Pueblo Memorial Airport,Pueblo,CO,USA,38.28908722,-104.4965722,A,America/Denver,-6.0
+RIL,Garfield County Regional Airport,Rifle,CO,USA,39.526315,-107.7269403,A,America/Denver,-6.0
+SBS,Steamboat Springs Bob Adams Field,Steamboat Springs,CO,USA,40.51625944,-106.8663006,A,America/Denver,-6.0
+STK,Sterling Municipal Airport,Sterling,CO,USA,40.6152625,-103.2646556,A,America/Denver,-6.0
+TAD,Perry Stokes,Trinidad,CO,USA,37.25937778,-104.340675,,America/Denver,-6.0
+TEX,Telluride Regional Airport,Telluride,CO,USA,37.95375861,-107.90848,A,America/Denver,-6.0
